@@ -1,7 +1,8 @@
 const express = require("express"),
       app = express(),
       hbs = require("hbs"),
-      fs = require("fs");
+      fs = require("fs"),
+      catMe = require("cat-me");
 
 const port = process.env.PORT || 3000;
 
@@ -37,7 +38,8 @@ hbs.registerHelper('screamIt', (text) => {
 app.get("/", (req, res) => {
   res.render("home", {
     pageTitle: "Home",
-    welcomeMessage: "Hello and welcome to my site"
+    welcomeMessage: "Hello and welcome to my site",
+    test: "Test"
   });
 });
 
