@@ -38,7 +38,7 @@ hbs.registerHelper('screamIt', (text) => {
 app.get("/", (req, res) => {
   res.render("home", {
     pageTitle: "Home",
-    welcomeMessage: "Hello and welcome to my site",
+    welcomeMessage: "This is a new commit",
     test: "Test"
   });
 });
